@@ -1,0 +1,82 @@
+/* Temel Sıfırlama ve Uzay Teması */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Ana Kart Yapısı */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    color: #4facfe;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Giriş Alanları */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box; /* Padding taşmasını engeller */
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+/* Buton Tasarımı */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Sonuç Alanı */
+#result {
+    margin-top: 20px;
+    min-height: 80px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.result-card {
+    background: rgba(0, 242, 254, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #4facfe;
+}
